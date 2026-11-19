@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numgreen"
+version = "0.1.0"
+description = "Numerical Green's functions for variable-coefficient elliptic PDEs and boundary-based solvers."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "The numgreen contributors" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+bempp = [
+    "bempp-cl>=0.4",
+    "numba>=0.58",
+]
+dev = [
+    "pytest>=7.4",
+    "bempp-cl>=0.4",
+    "numba>=0.58",
+]
+
+[project.urls]
+Homepage = "https://github.com/numgreen/numgreen"
+Repository = "https://github.com/numgreen/numgreen"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use numgreen in your work, please cite it as below."
+title: "numgreen: Numerical Green's Functions for Boundary-Based PDE Solvers"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/numgreen/numgreen"
+authors:
+  - name: "The numgreen contributors"
+keywords:
+  - Green's functions
+  - boundary element method
+  - finite element method
+  - method of fundamental solutions
+  - partial differential equations
+  - numerical analysis
+abstract: >-
+  A Python library for approximating Green's functions of linear elliptic PDEs
+  numerically and using them in boundary-based solvers such as BEM and MFS
+  when closed-form fundamental solutions are unavailable.
